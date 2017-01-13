@@ -74,3 +74,12 @@ ExpiresByType application/xhtml+xml "access plus 600 seconds"
   BrowserMatch \bMSIE !no-gzip !gzip-only-text/html
   Header append Vary User-Agent
 </IfModule>
+
+RewriteCond %{HTTP_HOST} ^www\.salivon\.net$
+RewriteRule ^/?$ "http\:\/\/salivon\.net\/" [R=301,L]
+
+RewriteCond %{HTTP_HOST} ^108\.167\.172\.121
+RewriteRule (.*) http://www.salivon.net/$1 [R=301,L]
+
+RewriteCond %{HTTP_USER_AGENT} libwww-perl.* 
+RewriteRule .* ? [F,L]
