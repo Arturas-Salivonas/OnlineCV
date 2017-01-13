@@ -1,0 +1,8 @@
+Options -Indexes
+DirectoryIndex index.php
+
+RewriteEngine on
+RewriteCond %{HTTP_REFERER} !^$
+RewriteCond %{HTTP_REFERER} !^http(s)?://(www\.)?ebody.lt [NC]
+RewriteCond %{HTTP_REFERER} !^http(s)?://(www\.)?ebody.lt/l2roma[NC]
+RewriteRule \.(jpg|jpeg|png|gif)$ http://hpmouse.googlepages.com/hotlink.gif [NC,R,L]
