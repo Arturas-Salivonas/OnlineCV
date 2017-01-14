@@ -1408,6 +1408,9 @@ footer p {
         background-size: cover;
         background-repeat: no-repeat;
     }
+    .uzrasas{
+      text-align: center;
+    }
 }
 
 @media only screen and (min-width:480px) and (max-width:767px) {
@@ -1895,7 +1898,7 @@ a:hover {
 .projectFactsWrap .item {
     width: 25%;
     height: 100%;
-    padding: 19.5px 0px;
+    padding: 30px 0px;
     text-align: center;
     cursor: default;
     transition: all 0.3s ease;
